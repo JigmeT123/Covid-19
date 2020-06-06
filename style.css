@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(100deg, #f6d365, #fda085);
+    height: 100%;
+}
+#title{
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Markazi Text', serif;
+}
+.forflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80vh;
+}
+.card{
+    margin: 2rem;
+}
+.card-title{
+    text-align: center;
+}
+.image{
+    height: 5.1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 5rem;
+    height: 5rem;
+}
+a{
+    text-decoration: none;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.quote{
+    font-weight: lighter;
+    font-style: italic;
+}
