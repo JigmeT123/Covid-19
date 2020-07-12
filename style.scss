@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+@mixin flex ($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+
+}
+body {
+    background-color: rgb(63, 63, 63);
+}
+.container{
+    @include flex(column);
+    margin-top: 1rem;
+    .title{
+        color: white;
+    }
+    #map{
+        margin-top: 2rem;
+    }
+    .marker {
+        background-color: #ff00ff49;
+        width: 20px;
+        height: 20px;
+        border: 1px #ff00ffa6 solid;
+        border-radius: 50%;
+        cursor: pointer;
+        color: black;
+        animation: pulse 3s linear infinite;
+      }
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 #ff00ff31, 0 0 0 0 #ff00ff31;
+    }40%{
+        box-shadow: 0 0 0 16px #ff00ff00, 0 0 0 0 #ff00ff31;
+    }80%{
+        box-shadow: 0 0 0 16px #ff00ff00, 0 0 0 10px #ff00ff00;
+    }100%{
+        box-shadow: 0 0 0 0 #ff00ff00, 0 0 0 10px #ff00ff00;
+    }
+}

@@ -3,69 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="icon" href="./original-bhutan_flag.jpg">
-        <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap" rel="stylesheet">
+        <title>Corona App</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
         <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous">
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-            <script src="https://kit.fontawesome.com/ca1310e345.js" crossorigin="anonymous"></script>
-        <script src="./main.js"></script>
-        <title>Covid-19 BHT</title>
-    </head>
-    <body>
-        <h1 id="title">Bhutan-Update on Covid-19</h1>
-        <p class="quote">"The reckless action of a single person who clandestinely crosses the border for trade, or to meet acquaintances, or to bring someone to Bhutan, risks spreading coronavirus in their community and in the country. It will compeletly undermineall our national efforts. Therefore, to be 100% successfull in our fight against covid 19, it will require the unstinted cooperation of each and every person" ~<strong>The King Of Bhutan</strong></p>
-        <div class="forflex">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Confirmed Cases</h5>
-                    <p class="card-text1"></p>
-
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Total Recovered</h5>
-
-                    <p class="card-text2"></p>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Active</h5>
-                    <p class="card-text3"></p>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Death</h5>
-                    <p class="card-text4"></p>
-
-                </div>
-            </div>
-            <div class="image">
-                <img src="./wash.gif" alt="WashGif">
-             
-            </div>
-
-        </div>
+            href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css'
+            rel='stylesheet'/>
 
         
-    </body>
+    </head>
+    <body>
+
+<div class="container">
+    <h1 class="title">Corona Map</h1> 
+    <div id='map' style='width: 90%; height: 600px;'></div>
+    
+</div>
+<script defer="defer" type="module" src="./main.js"></script>
+</body>
 </html>
